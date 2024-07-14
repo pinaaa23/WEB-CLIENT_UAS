@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f6f0e1;
+  max-height: 2627px;
+  max-width: 1440px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ...............................................NAVBAR......................................................... */
+
+section nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f6f0e1;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+/* .brand i {
+      padding-left: 5px;
+    } */
+
+section nav .brand {
+  position: relative;
+  nav-left: 10px;
+  padding-top: 40px;
+  font-family: urbanist;
+  font-size: 32px;
+  color: black;
+}
+
+section nav .brand:hover {
+  width: 170px;
+  position: relative;
+  nav-left: auto;
+  font-size: 30px;
+  color: rgb(8, 249, 8);
+  transition: all 0.3s ease-in-out;
+}
+
+/* section nav .logo img {
+      width: 100px;
+      cursor: pointer;
+      margin: 7px 0;
+    } */
+
+section nav .username img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+
+section nav .username img:hover {
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  transition: all 0.3s ease-in-out;
+}
+
+section nav ul {
+  list-style: none;
+}
+
+section nav ul li {
+  display: inline-block;
+  margin: 20px 15px;
+  padding-top: 40px;
+}
+
+section nav ul li a {
+  width: 55px;
+  height: 41px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: mallanna;
+  font-size: 22px;
+  color: black;
+  transition: 0.1s;
+}
+
+section nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+}
+
+section nav ul li a:hover {
+  color: #fac031;
+}
+
+section nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* section nav i {
+    font-size: 18px;
+    color: rgb(8, 249, 8);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  } */
+
+/* ..............................................CHECKOUT..................................................... */
+
+.co_main {
+  display: flex;
+}
+
+.co {
+  display: inline;
+}
+
+.co img {
+  width: 394px;
+  height: 398px;
+  margin-top: -400px;
+  margin-left: 120px;
+}
+
+.co_text {
+  width: 184px;
+  height: 57px;
+  /* margin-top: -330px;
+    margin-left: 70px; */
+}
+
+.co_text h1 {
+  font-family: poppins;
+  font-size: 38px;
+  margin-top: -330px;
+  margin-left: 70px;
+}
+
+.co_text h3 {
+  font-weight: 400px;
+  font-family: poppins;
+  font-size: 30px;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+.co_text p {
+  font-size: 20px;
+  font-family: poppins;
+  margin-top: 10px;
+  padding-left: 70px;
+}
+
+.co_buy {
+  margin: -380px 20px 20px 200px;
+  width: 569px;
+  height: 1097px;
+  background-color: white;
+  border-style: groove;
+  border-color: black;
+}
+
+.co2 h3 {
+  padding-top: 20px;
+  padding-left: 130px;
+  font-family: poppins;
+  font-size: 32px;
+}
+
+.co2product {
+  justify-content: space-between;
+}
+
+.co2product img {
+  margin: 54px 0px 0px 66px;
+}
+
+.co2product h1 {
+  margin-left: 190px;
+  margin-top: -80px;
+  font-size: 20px;
+  font-family: poppins;
+}
+
+.co2product h2 {
+  margin-left: 400px;
+  margin-top: -30px;
+  font-size: 20px;
+  font-family: poppins;
+}
+
+.co2product a {
+  margin-left: 190px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.co2product p {
+  margin-left: 400px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.co2product b {
+  margin-left: 36px;
+  margin-top: 90px;
+
+  color: grey;
+}
+
+.co2product h3 {
+  font-weight: 500px;
+  margin-top: 60px;
+  margin-left: 70px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.co2product h4 {
+  font-weight: 700px;
+  margin-top: -25px;
+  margin-left: 400px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.co2product h5 {
+  margin-left: 70px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.co2product h6 {
+  margin-left: 435px;
+  margin-top: -25px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.co2product c {
+  margin-left: 36px;
+  margin-top: 200px;
+  margin-bottom: 90px;
+  color: grey;
+}
+
+.co3product h1 {
+  font-weight: 500px;
+  margin-top: 15px;
+  margin-left: 70px;
+  font-size: 22px;
+  font-family: poppins;
+}
+
+.co3product h2 {
+  font-weight: 500px;
+  margin-top: -35px;
+  margin-left: 400px;
+  font-size: 22px;
+  font-family: poppins;
+}
+
+.co3product img {
+  width: 400px;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.co4 {
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.co5 {
+  margin-top: -60px;
+  margin-left: 250px;
+}
+
+.co6 {
+  margin-top: -50px;
+  margin-left: 340px;
+}
+
+.co_buy button {
+  width: 371px;
+  height: 67px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-top: 25px;
+  background-color: #fcc32c;
+  box-shadow: 1px 1px 11px;
+  font-size: 22px;
+  font-family: poppins;
+  color: white;
+}
+
+.co_buy button:hover {
+  background-color: #fcc52cd0;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer {
+  font-size: 36px;
+  font-family: lancelot;
+  display: flex;
+  align-items: center;
+  margin-left: 700px;
+  margin-top: 200px;
+}

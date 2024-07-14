@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+} /* Mengatur margin, padding, dan mengatur box-sizing untuk semua elemen */
+
+body {
+  background-color: #f6f0e1;
+  max-height: 2627px;
+  max-width: 1440px;
+} /* Mengatur background, tinggi maksimum, dan lebar maksimum untuk body */
+
+html {
+  scroll-behavior: smooth;
+} /* Menambahkan perilaku scroll yang halus pada html */
+
+section {
+  width: 100%;
+  height: 100vh;
+} /* Mengatur lebar dan tinggi setiap section */
+
+/* ...............................................NAVBAR......................................................... */
+
+section nav {
+  padding-top: 20px;
+  padding-left: 73px;
+  padding-right: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f6f0e1;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+} /* Mengatur gaya untuk navbar, termasuk padding, display, dan posisi fixed */
+
+
+section nav .brand {
+  position: relative;
+  align-items: center;
+  font-family: urbanist;
+  font-size: 32px;
+  color: black;
+} /* Mengatur gaya untuk elemen brand di navbar */
+
+.nav-menu{
+  align-items: center;
+  display: flex;
+  gap: 50px;
+} /* Menyusun menu navigasi dengan jarak antar item */
+
+section nav h1{
+  font-weight: 400;
+} /* Mengatur gaya untuk elemen h1 di navbar */
+
+section nav .username img {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+} /* Mengatur ukuran dan gaya untuk gambar profil pengguna */
+
+section nav .username img:hover {
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  transition: all 0.3s ease-in-out;
+} /* Mengatur efek hover untuk gambar profil pengguna */
+
+section nav ul {
+  list-style: none;
+} /* Menghilangkan bullet points pada elemen ul di navbar */
+
+section nav ul li {
+  display: inline-block;
+  margin: 20px 15px;
+  padding-top: 10px;
+} /* Menyusun item list di navbar secara inline */
+
+section nav a {
+  width: 55px;
+  height: 41px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: mallanna;
+  font-size: 22px;
+  color: black;
+  transition: 0.1s;
+} /* Mengatur gaya untuk link di navbar */
+
+.nav-menu a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+} /* Menambahkan efek garis bawah pada link di navbar saat hover */
+
+
+.nav-menu a:hover {
+  text-decoration: underline #fac031;
+} /* Mengatur efek hover pada link di navbar */
+
+section nav i {
+  font-size: 18px;
+  color: rgb(8, 249, 8);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+} /* Mengatur gaya dan efek hover untuk ikon di navbar */
+
+/* ................................................................WELCOME....................................................... */
+.main {
+  display: flex;
+  align-items: right;
+  position: relative;
+  top: 60px;
+  /* justify-content: space-around; */
+} /* Menyusun elemen utama dengan flexbox dan mengatur posisinya */
+
+.main .hero {
+  margin-right: 2rem;
+} /* Mengatur margin kanan untuk elemen hero */
+
+.men_text {
+  margin-top: 8rem;
+  width: 400px;
+} /* Mengatur margin atas dan lebar untuk elemen men_text */
+
+section .main .men_text h1 {
+  font-family: lancelot;
+  font-size: 48px;
+  padding-top: 10px;
+  padding-left: 98px;
+  bottom: 10px;
+} /* Mengatur gaya untuk elemen h1 di dalam men_text */
+
+section p {
+  width: 650px;
+  text-align: left;
+  position: relative;
+  padding-top: 100px;
+  left: 98px;
+  bottom: 120px;
+  line-height: 22px;
+} /* Mengatur gaya untuk paragraf di dalam section */
+
+.main_img {
+  margin-top: 75px;
+  margin-left: 100px;
+} /* Mengatur margin atas dan kiri untuk elemen main_img */
+
+.main_image img {
+  position: relative;
+} /* Mengatur posisi relatif untuk gambar di dalam main_image */
+
+.hero {
+  display: flex;
+} /* Menyusun elemen hero dengan flexbox */
+
+.main_card {
+  margin: 150px 50px 20px 80px;
+} /* Mengatur margin untuk elemen main_card */
+
+.card {
+  display: inline-block;
+} /* Mengatur margin untuk elemen main_card */
+
+.card1 {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  display: flex;
+  width: 244px;
+  height: 69px;
+  background-color: #fffbfb;
+  padding: 12px;
+  padding-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px;
+} /* Mengatur gaya untuk elemen card1 termasuk margin, display, ukuran, warna latar belakang, padding, border-radius, dan shadow */
+
+.card1 img {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+} /* Mengatur ukuran dan bentuk gambar di dalam card1 */
+
+.card1 img:hover {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  transition: 0.9s;
+} /* Menambahkan efek hover pada gambar di dalam card1 */
+
+.card1 h4 {
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: mallanna;
+} /* Mengatur gaya untuk elemen h4 di dalam card1 */
+
+.card1 h4:hover {
+  font-size: 25px;
+  color: #fac031;
+  transition: 0.3s;
+} /* Menambahkan efek hover pada elemen h4 di dalam card1 */
+
+/* ...............................................................MENU.............................................................. */
+
+.card2 {
+  background-color: #fcc32c;
+  width: 212px;
+  height: 60px;
+  margin-left: 121px;
+  margin-top: 100px;
+  padding: 10px 81px 8px 81px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} /* Mengatur gaya untuk elemen card2 termasuk warna latar belakang, ukuran, margin, padding, border-radius, dan shadow */
+
+.star {
+  margin-left: 60px;
+} /* Mengatur margin kiri untuk elemen star */
+
+.star .i{
+  margin-left: -0.2px;
+} /* Mengatur margin kiri untuk elemen i di dalam star */
+
+.card2 h5 {
+  justify-content: center;
+  font-size: 22px;
+  font-family: mallanna;
+} /* Mengatur gaya untuk elemen h5 di dalam card2 */
+
+.card2 h5:hover {
+  font-size: 28px;
+  transition: all 0.3s ease-out;
+} /* Menambahkan efek hover pada elemen h5 di dalam card2 */
+
+.main_box {
+  margin: -20px 30px 50px 30px;
+} /* Mengatur margin untuk elemen main_box */
+
+.box {
+  display: flex;
+} /* Menyusun elemen box dengan flexbox */
+
+.box1 {
+  margin-top: 89px;
+  margin-bottom: 2rem;
+  margin-left: 228px;
+  width: 264px;
+  height: 293px;
+  background-color: #fffbfb;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.box1 img {
+  width: 147px;
+  height: 147px;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.box1 img:hover {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.box1 h3 {
+  padding-top: 1px;
+  text-align: center;
+  padding-bottom: 1px;
+  font-size: 24px;
+  font-family: mallanna;
+}
+
+
+.box1 svg {
+  /* align-items: center; */
+  /* width: 23px; */
+  margin-left: 20px;
+  color: #fac031;
+}
+
+.box1 h4 {
+  padding-top: 1px;
+  text-align: center;
+  font-family: mallanna;
+  font-size: 22px;
+}
+
+.box2 {
+  margin-top: 89px;
+  margin-bottom: 2rem;
+  margin-left: 100px;
+  width: 264px;
+  height: 293px;
+  background-color: #fffbfb;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.box2 img {
+  width: 147px;
+  height: 147px;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.box2 img:hover {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.box2 h3 {
+  padding-top: 1px;
+  text-align: center;
+  padding-bottom: 1px;
+  font-size: 24px;
+  font-family: mallanna;
+}
+
+.box2 svg {
+  margin-left: 20px;
+  color: #fac031;
+}
+
+.box2 h4 {
+  padding-top: 1px;
+  text-align: center;
+  font-family: mallanna;
+  font-size: 22px;
+}
+
+.box3 {
+  margin-top: 89px;
+  margin-bottom: 2rem;
+  margin-left: 100px;
+  width: 264px;
+  height: 293px;
+  background-color: #fffbfb;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.box3 img {
+  width: 147px;
+  height: 147px;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.box3 img:hover {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.box3 h3 {
+  padding-top: 1px;
+  text-align: center;
+  padding-bottom: 1px;
+  font-size: 24px;
+  font-family: mallanna;
+}
+
+.box3 svg {
+  margin-left: 20px;
+  color: #fac031;
+}
+
+.box3 h4 {
+  padding-top: 1px;
+  text-align: center;
+  font-family: mallanna;
+  font-size: 22px;
+}
+
+.footer {
+  font-size: 36px;
+  font-family: lancelot;
+  display: flex;
+  align-items: center;
+  margin-left: 700px;
+  margin-top: 200px;
+}
+/* ................................................DETAIL.................................................... */
